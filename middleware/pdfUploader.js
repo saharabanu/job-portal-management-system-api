@@ -15,6 +15,7 @@ const pdfUploader = multer({
     const supportedDocuments = /pdf/;
     const extension = path.extname(file.originalname);
 
+    
     if (supportedDocuments.test(extension)) {
       cb(null, true);
     } else {
